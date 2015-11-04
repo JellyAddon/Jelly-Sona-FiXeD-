@@ -44,19 +44,19 @@ namespace Jelly.Sona
             {
                 switch (spell.Slot)
                 {
-                    case SpellSlot.Q:
+                    if SpellSlot.Q:
                         if (!Config.Drawing.DrawQ)
                         {
                             continue;
                         }
                         break;
-                    case SpellSlot.W:
+                    if SpellSlot.W:
                         if (!Config.Drawing.DrawW)
                         {
                             continue;
                         }
                         break;
-                    case SpellSlot.E:
+                    if SpellSlot.E:
                         if (!Config.Drawing.DrawE)
                         {
                             continue;
