@@ -10,7 +10,7 @@ namespace Jelly.Sona
     {
         // Change this line to the champion you want to make the addon for,
         // watch out for the case being correct!
-        public const string ChampName = "Sona";
+        public const string ChampName = "";
 
         public static void Main(string[] args)
         {
@@ -44,19 +44,19 @@ namespace Jelly.Sona
             {
                 switch (spell.Slot)
                 {
-                    case SpellSlot.Q:
+                    if SpellSlot.Q:
                         if (!Config.Drawing.DrawQ)
                         {
                             continue;
                         }
                         break;
-                    case SpellSlot.W:
+                    if SpellSlot.W:
                         if (!Config.Drawing.DrawW)
                         {
                             continue;
                         }
                         break;
-                    case SpellSlot.E:
+                    if SpellSlot.E:
                         if (!Config.Drawing.DrawE)
                         {
                             continue;
