@@ -78,8 +78,8 @@ namespace Jelly.Sona
                 static Combo()
                 {
                     Menu.AddGroupLabel("Combo");
-                    _useQ = Menu.Add("comboUseQ", new CheckBox("Use Q"));
-                    _useR = Menu.Add("comboUseR", new CheckBox("Use R", false));
+                    _useQ = Menu.Add("UseQinCombo", new CheckBox("Use Q"));
+                    _useR = Menu.Add("UseRinCombo", new CheckBox("Use R", false));
                 }
 
                 public static void Initialize()
@@ -105,7 +105,7 @@ namespace Jelly.Sona
                 static Harass()
                 {
                     Menu.AddGroupLabel("Harass");
-                    _useQ = Menu.Add("harassUseQ", new CheckBox("Use Q", false));
+                    _useQ = Menu.Add("UseQHarass", new CheckBox("Use Q", false));
                     _Mana = Menu.Add("harassMana", new Slider("Maximum mana usage in percent ({0}%)", 40));
                 }
 
@@ -133,7 +133,7 @@ namespace Jelly.Sona
                     Menu.AddGroupLabel("Lane Clear");
 
                     // UseQ for laneclear checkbox
-                    _useQ = Menu.Add("LaneClearUseQ", new CheckBox("Use Q", false));
+                    _useQ = Menu.Add("LaneClearWithQ", new CheckBox("Use Q", false));
 
                     // Mana usage bar
                     _Mana = Menu.Add("LaneClearMana", new Slider("Maximum mana usage in percent ({0}%)", 90));
