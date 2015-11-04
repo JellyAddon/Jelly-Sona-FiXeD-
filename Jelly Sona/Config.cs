@@ -228,8 +228,8 @@ namespace Jelly.Sona
                 Menu = Config.Menu.AddSubMenu("Drawing");
 
                 _drawQ = Menu.Add("drawQ", new CheckBox("Draw Q(Blue)"));
-                _drawW = Menu.Add("drawW", new CheckBox("Draw W(Purple)"));
-                _drawE = Menu.Add("drawE", new CheckBox("Draw E(Green)"));
+                _drawW = Menu.Add("drawW", new CheckBox("Draw W(Green)"));
+                _drawE = Menu.Add("drawE", new CheckBox("Draw E(Purple)"));
                 _drawR = Menu.Add("drawR", new CheckBox("Draw R(Red)", false));
             }
 
